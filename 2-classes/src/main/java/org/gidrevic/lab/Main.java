@@ -1,17 +1,24 @@
 package org.gidrevic.lab;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        int value = 9;
+        ComplexNumber num1 = new ComplexNumber(2, 3);
+        ComplexNumber num2 = new ComplexNumber(-1, 1);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println("Addition:");
+        System.out.printf("(%s) + (%s) = %s\n", num1, num2, num1.add(num2));
+
+        System.out.println("Substraction:");
+        System.out.printf("(%s) - (%s) = %s\n", num1, num2, num1.subtract(num2));
+
+        System.out.println("Multiplication:");
+        System.out.printf("(%s) * (%s) = %s\n", num1, num2, num1.multiply(num2));
+
+        System.out.println("Complex number from real number:");
+        System.out.printf("%d = %s\n", value, ComplexNumber.fromReal(value));
+
+        System.out.println("Complex number from imaginary number:");
+        System.out.printf("%di = %s\n", value, ComplexNumber.fromImaginary(value));
     }
 }
