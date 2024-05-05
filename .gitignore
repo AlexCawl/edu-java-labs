@@ -1,5 +1,6 @@
 1-syntax/target/
 2-classes/target/
+3-polymorphism/target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
