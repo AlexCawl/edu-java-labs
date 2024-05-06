@@ -1,5 +1,6 @@
 package org.gidrevic.lab.util;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
 
@@ -13,4 +14,6 @@ public interface Owner<ID, T extends Indexable<ID>> {
     void removeById(ID id) throws NotFoundException;
 
     Optional<T> find(Predicate<T>... conditions);
+
+    List<T> findAll(Predicate<T>... conditions);
 }
