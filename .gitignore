@@ -4,7 +4,7 @@
 4-lambdas/target/
 5-io/target/
 6-generics/target/
-
+7-collections/target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
