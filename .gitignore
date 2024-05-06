@@ -3,6 +3,7 @@
 3-polymorphism/target/
 4-lambdas/target/
 5-io/target/
+6-generics/target/
 
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
